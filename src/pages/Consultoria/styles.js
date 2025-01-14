@@ -17,8 +17,9 @@ export const About = styled.div`
 
   display: flex;
   gap: 3rem;
+  /* background-color: red; */
 
-  background-color: ${({ theme }) => theme.COLORS.GREEN_800};
+  background-color: ${({ theme }) => theme.COLORS.GRAY_800}; 
 
   .textContent {
     width: 100%;

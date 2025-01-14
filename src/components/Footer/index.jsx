@@ -8,10 +8,6 @@ export function Footer() {
       title: "Produtos",
       url: "#products",
     },
-    {
-      title: "Serviços",
-      url: "#services",
-    },
   ];
 
   return (
@@ -19,13 +15,14 @@ export function Footer() {
       <div className="links">
         {links.map((link) => {
           return (
-            <Link to={link.url} className="link">{link.title}</Link>
+            <a href={link.url} className="link">{link.title}</a>
           );
         })}
 
         <div className="contact">
           <p>Entre em contato</p>
-          <p>projeto@earthprojects.com.br</p>
+          <p>novosnegocios@aiongroupbrazil.com.br</p>
+          <p>comercial@aiongroupbrazil.com.br</p>
         </div>
       </div>
     </Container>

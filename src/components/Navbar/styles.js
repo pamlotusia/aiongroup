@@ -11,9 +11,11 @@ export const Container = styled.nav`
     flex-direction: row-reverse;
     align-items: center;
 
-    color: ${({ theme }) => theme.COLORS.GREEN_800};
   }
-
+  
+  li{
+    font-size: 1.5rem;
+  }
   .btn-mobile {
     display: none;
   }

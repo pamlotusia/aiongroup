@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9ec7f5e9.css",
+    "main.js": "/static/js/main.b708d152.js",
+    "static/media/valores.png": "/static/media/valores.c2a7ad0298cc0b324b31.png",
+    "static/media/missao.png": "/static/media/missao.49b8d2e2b6564581a753.png",
+    "static/media/visao.png": "/static/media/visao.be0a6d82171fd1336fa8.png",
+    "static/media/gestao-de-crise.jpg": "/static/media/gestao-de-crise.8659d1cd38474cfc542a.jpg",
+    "static/media/gbflogo.png": "/static/media/gbflogo.26d3f5bd74273c9834d5.png",
+    "static/media/security.jpg": "/static/media/security.080f093e0d8686a68081.jpg",
+    "static/media/freepik-export-20250114141330y5Zm.jpeg": "/static/media/freepik-export-20250114141330y5Zm.1d0a3f686360e7ce4b84.jpeg",
+    "static/media/admin.jpg": "/static/media/admin.1147d90a150aa9689561.jpg",
+    "static/media/reestruturacao.jpg": "/static/media/reestruturacao.0521c5a025ec6a6688e0.jpg",
+    "static/media/analise.jpg": "/static/media/analise.2c47144be1981ef21643.jpg",
+    "static/media/business-strategy-concept-with-game.jpg": "/static/media/business-strategy-concept-with-game.42ca61371740bd12d77c.jpg",
+    "static/media/backgroundPerson.jpg": "/static/media/backgroundPerson.6bdf88ffd901809af411.jpg",
+    "static/media/operacoes-financeiras.jpg": "/static/media/operacoes-financeiras.ce732c7821edcfdfa41a.jpg",
+    "static/media/welcome.jpg": "/static/media/welcome.d47ddd240e4580c1021c.jpg",
+    "index.html": "/index.html",
+    "main.9ec7f5e9.css.map": "/static/css/main.9ec7f5e9.css.map",
+    "main.b708d152.js.map": "/static/js/main.b708d152.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ec7f5e9.css",
+    "static/js/main.b708d152.js"
+  ]
+}

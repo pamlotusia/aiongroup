@@ -1,9 +1,9 @@
 {
   "short_name": "React App",
-  "name": "Plataforma Global Force Bank",
+  "name": "Plataforma Aion Group",
   "icons": [
     {
-      "src": "logo.png",
+      "src":"A.svg" ,
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }

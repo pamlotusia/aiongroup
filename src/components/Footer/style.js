@@ -9,7 +9,7 @@ export const Container = styled.footer`
 
   padding: 1rem 6rem;
 
-  background-color: ${({ theme }) => theme.COLORS.GREEN_800};
+  background-color: ${({ theme }) => theme.COLORS.GRAY_800};
   color: ${({ theme }) => theme.COLORS.GRAY_200};
 
   p {
@@ -25,6 +25,10 @@ export const Container = styled.footer`
 
   .contact {
     text-align: right;
+    
+    p{
+      margin: .5rem 0;      
+    }
   }
 
   a:hover,

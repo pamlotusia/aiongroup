@@ -18,24 +18,18 @@ export function Navbar() {
 	}, []);
 
 	const adresses = [
-		{ label: "Investimentos", hasArrow: true },
-		{ label: "Aion Group", hasArrow: true },
+		{ label: "Produtos", hasArrow: true },
+		{ label: "Sobre nós", url:'/'},
 	];
 
-	const instituto = [
-		{ label: 'Sobre', url: '/institucional' },
-		{ label: "Estruturação", url: "/estruturacao" },
-		{ label: "Consultoria", url: "/consultoria" },
-	];
-	const tokenPage = [
-		{ url: "/cadastro-investidor", label: "Seja um investidor" },
-		{ url: "/entrar", label: "Simulador de investimentos" },
-	];
-
-	const buttons = [
-		{ url: "/entrar", label: "Entrar", className: "signin" },
-		{ url: "/register", label: "Cadastre-se", className: "signup" },
-	];
+	const products = [
+		{
+			label: 'Consultoria', url: '/consultoria'
+		},
+		{
+			label: 'Estruturação', url: 'estruturacao'
+		}
+	]
 
 	const [openMenu, setOpenMenu] = useState();
 	const [openSubmenu, setOpenSubmenu] = useState(null);
@@ -43,21 +37,6 @@ export function Navbar() {
 	return (
 		<Container>
 			<ul className={`${openMenu ? "open" : ""}`}>
-				<Register>
-					{!queryParams.cpf ? (
-						buttons.map((btn) => (
-							<button className={btn.className} key={btn.url}>
-								<Link to={btn.url}>{btn.label}</Link>
-							</button>
-						))
-					) : (
-						<div style={{ textAlign: "center" }}>
-							<span>Bem-vindo</span>
-							<br />
-							<strong>{queryParams.cpf}</strong>
-						</div>
-					)}
-				</Register>
 
 				{adresses.map((adress) =>
 					adress.hasArrow ? (
@@ -71,16 +50,10 @@ export function Navbar() {
 							{openSubmenu === adress.label && (
 								<SecondaryContainer className="submenu">
 									<ul>
-										{adress.label === "Investimentos" &&
-											tokenPage.map((tokenSublink) => (
-												<li key={tokenSublink.url}>
-													<NavItem url={tokenSublink.url} label={tokenSublink.label} />
-												</li>
-											))}
-										{adress.label === "Aion Group" &&
-											instituto.map((link) => (
-												<li key={link.label}>
-													<NavItem url={link.url} label={link.label} />
+										{adress.label === "Produtos" &&
+											products.map((products) => (
+												<li key={products.url}>
+													<NavItem url={products.url} label={products.label} />
 												</li>
 											))}
 									</ul>

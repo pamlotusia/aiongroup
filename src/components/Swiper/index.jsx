@@ -6,26 +6,16 @@ import "swiper/css/pagination"; // Estilos de paginação
 import { ImageContainer } from "./styles";
 // import consultoria from "../../assets/15410.jpg";
 import welcome from "../../assets/welcome.jpg";
-import novelty from "../../assets/novelty.jpg";
 import security from "../../assets/security.jpg";
+import consulting from "../../assets/freepik-export-20250114141330y5Zm.jpeg";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 export function Slider() {
   const background = [
     {
-      image: welcome,
-      title: "Quem Somos",
-      text: "A Global Force Bank é uma fintech ousada e inovadora que está revolucionando o mundo financeiro. Nosso objetivo é transformar a forma como você interage com o dinheiro, unindo segurança, tecnologia e transparência.",
-    },
-    {
-      image: security,
-      title: "Transformação Digital com Segurança",
-      text: "Com a Global Force Bank, você pode converter moedas fiduciárias, como reais e dólares, em tokens digitais. Porém, não se trata de qualquer token: nossos ativos digitais são 100% lastreados por um fundo de reserva em moeda real.",
-    },
-    {
-      image: novelty,
-      title: " A Nova Era das Finanças",
-      text: "Na Global Force Bank, acreditamos que a inovação financeira deve ser acessível, confiável e estável. Estamos aqui para tornar o futuro digital mais seguro, abrindo caminho para uma economia mais integrada e globalizada",
+      image: consulting,
+      title: "Soluções financeiras que impulsionam o futuro da sua empresa.",
+      text: "A AION GROUP OF BRAZIL existe no mercado financeiro para preencher uma necessidade crucial: a de fornecer soluções financeiras inovadoras e sustentáveis que impulsionam o crescimento e desenvolvimento econômico, tanto a nível nacional quanto global.",
     },
   ];
   return (
@@ -37,13 +27,13 @@ export function Slider() {
       navigation //
       pagination={{ clickable: true }} // Paginação clicável
       loop={true} // Loop infinito
-      style={{maxWidth: '100%'}}
+      style={{ maxWidth: "100%" }}
     >
       {/* Slides */}
 
       {background.map((index) => {
         return (
-          <SwiperSlide>
+          <SwiperSlide style={{ height: "32rem" }}>
             <ImagePosition
               image={index.image}
               text={index.text}
@@ -61,7 +51,7 @@ export function ImagePosition({ image, title, text }) {
     <ImageContainer>
       <img src={image} />
       <div>
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <p>{text}</p>
       </div>
     </ImageContainer>

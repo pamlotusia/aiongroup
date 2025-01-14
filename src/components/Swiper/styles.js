@@ -4,11 +4,11 @@ export const ImageContainer = styled.div`
   position: relative;
 
   img {
-    height: 30rem;
+    height: 100%;
     position: relative;
     width: 100%;
     object-fit: cover;
-    filter: brightness(0.8);
+    filter: brightness(0.9);
     animation: expandImage 3s ease-out forwards; /* Animação */
   }
 
@@ -19,30 +19,32 @@ export const ImageContainer = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(270deg, #254a3a 1.1%, rgba(37, 74, 58, 0) 100%);
     z-index: 1; /* Garante que o gradiente fique acima da imagem */
   }
 
   div {
     z-index: 2;
     position: absolute;
-    top: 25%;
+    top: 15%;
     width: 60%;
     margin: 0 5rem;
-    color: ${({ theme }) => theme.COLORS.WHITE};
-
+    
     /* Animação */
     opacity: 0;
     transform: translateX(-100%);
     animation: slideIn 1.5s ease-out forwards;
-
-    h3 {
+    
+    h2 {
       font-size: 3rem;
       margin-bottom: 2rem;
+      letter-spacing: .1rem;
+      color: ${({ theme }) => theme.COLORS.GRAY_800};
+      font-family: "Bebas Neue", serif;
     }
     p {
+      color: ${({ theme }) => theme.COLORS.GRAY_800};
       font-size: 1.5rem;
-      font-weight: 200;
+      font-weight: 300;
     }
 
     @media (max-width: 1000px) {

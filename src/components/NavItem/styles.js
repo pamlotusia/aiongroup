@@ -8,8 +8,9 @@ export const Container = styled.li`
 
     padding: 0 2rem;
     position: relative;
+    font-family: "Bebas Neue", serif;
 
-    color: ${({ theme }) => theme.COLORS.GREEN_300};
+    color: ${({ theme }) => theme.COLORS.GRAY_800};
   }
 
   .link:hover {
