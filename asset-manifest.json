@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/static/js/main.08da1f2c.js",
+    "static/media/gbflogo.png": "/static/media/gbflogo.26d3f5bd74273c9834d5.png",
+    "static/media/fundo.png": "/static/media/fundo.98f24b58ed7cc9d37c67.png",
+    "static/media/treinamentos.jpg": "/static/media/treinamentos.4a732ab9b407313d8dcc.jpg",
+    "static/media/consultoria.jpg": "/static/media/consultoria.0c8a6ac24882fa66568d.jpg",
+    "static/media/planejamento.jpg": "/static/media/planejamento.3b8d1cf2764ce83f3eba.jpg",
+    "static/media/gestao-riscos.jpg": "/static/media/gestao-riscos.c81af884a8ef968ff996.jpg",
+    "index.html": "/index.html",
+    "main.08da1f2c.js.map": "/static/js/main.08da1f2c.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.08da1f2c.js"
+  ]
+}

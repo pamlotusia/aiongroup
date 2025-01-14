@@ -1,0 +1,137 @@
+.bank-app {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f6f9;
+}
+
+.bank-app-header {
+  background-color: #0044cc;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.bank-app-header .logo {
+  width: 150px;
+}
+
+.bank-app-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.bank-app-nav button {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bank-app-nav button.active {
+  background-color: #0044cc;
+  color: white;
+  border-color: #0044cc;
+}
+
+.bank-app-nav button:hover {
+  background-color: #f1f1f1;
+}
+
+.bank-app-main {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.bank-app-footer {
+  background-color: #0044cc;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.bank-app-footer .btn-primary,
+.bank-app-footer .btn-secondary {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bank-app-footer .btn-primary {
+  background-color: #0066cc;
+  color: white;
+}
+
+.bank-app-footer .btn-secondary {
+  background-color: #ccc;
+}
+
+.bank-app-footer .btn-primary:hover {
+  background-color: #005bb5;
+}
+
+.bank-app-footer .btn-secondary:hover {
+  background-color: #b3b3b3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .bank-app-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-group input {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bank-app-header h1 {
+    font-size: 20px;
+  }
+
+  .bank-app-nav button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .form-group input {
+    font-size: 14px;
+  }
+}
+
