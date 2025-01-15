@@ -14,7 +14,7 @@ export const Container = styled.li`
   }
 
   .link:hover {
-    color: ${({ theme }) => theme.COLORS.YELLOW};
+    color: ${({ theme }) => theme.COLORS.ORANGE};
     transition: color 0.2s ease-in-out;
     transition: 1s width ease-in;
   }
@@ -26,7 +26,7 @@ export const Container = styled.li`
     width: 0;
     height: 2px;
 
-    background-color: ${({ theme }) => theme.COLORS.YELLOW};
+    background-color: ${({ theme }) => theme.COLORS.ORANGE};
     position: absolute;
     bottom: -4px;
     left: 0;

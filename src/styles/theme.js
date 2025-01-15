@@ -2,9 +2,15 @@ export default {
     COLORS: {
         WHITE: "#fff",
         YELLOW: "#f0b90b",
+        ORANGE: '#FA5001',
 
         LILAC_200: '#D1CCC9',
         LILAC_500: '#9D23DB',
+
+        BLUE_200: '#E6F9EF8',
+        BLUE_400: '#4596F5', 
+        BLUE_600: '#142B46', 
+        BLUE_700: '#000B3D', 
 
         GREEN_800:"#022c31", // card item, home title, .active labels
         GREEN_300:"#254a3a",// navbar color

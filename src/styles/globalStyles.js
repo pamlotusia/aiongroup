@@ -22,6 +22,14 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
   }
 
+  h3{
+    font-size: 3rem;
+    font-family: "Bebas Neue", serif;
+    text-align: center;
+
+    margin: 2rem 0;
+  }
+
   button:hover{
     filter: brightness(0.9);
   }

@@ -17,12 +17,10 @@ export const HomeContainer = styled.div`
       display: grid;
       padding: 1rem;
       gap: 0.5rem;
-      margin: 1rem;
+      margin: 1rem 0;
       border-radius: 10px;
 
       background-color: ${({ theme }) => theme.COLORS.GRAY_400};
-
-      /* border-bottom: 6px solid ${({ theme }) => theme.COLORS.YELLOW}; */
 
       svg {
         font-size: 1.8rem;
@@ -45,47 +43,61 @@ export const HomeContainer = styled.div`
     background-color: ${({ theme }) => theme.COLORS.WHITE};
     color: ${({ theme }) => theme.COLORS.GRAY_800};
 
-    .card {
+    .solutions {
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+      gap: 2rem;
+
+      img {
+        min-width: 50% 
+      }
+    }
+
+    .cards {
       display: grid;
+    }
+
+    .card {
+      display: flex;
+      gap: 1rem;
       padding: 1rem;
-      gap: 0.5rem;
-      margin: 1rem;
-      border-radius: 10px;
+      margin: 0 0 1rem;
 
-      background-color: ${({ theme }) => theme.COLORS.LILAC_200};
+      background-color: ${({ theme }) => theme.COLORS.BLUE_200};
 
-      position: relative;
+      .textContent {
+        gap: 1rem;
+      }
 
       .icon {
-        width: 4rem;
-        height: 4rem;
+        min-width: 2.3rem;
+        height: 2.3rem;
 
-        background-color: ${({ theme }) => theme.COLORS.GRAY_800};
+        background-color: ${({ theme }) => theme.COLORS.ORANGE};
         color: ${({ theme }) => theme.COLORS.GRAY_200};
-
-        position: absolute;
-        top: -2rem;
-        right: 1rem;
 
         display: flex;
         align-items: center;
         justify-content: center;
 
         border-radius: 50%;
+
         svg {
-          font-size: 2.2rem;
+          font-size: 1.2rem;
         }
       }
 
       .title {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
         font-weight: 500;
-        margin: 2rem 0;
+        color: ${({ theme }) => theme.COLORS.GRAY_800};
       }
 
       .text {
-        font-size: 1.2rem;
-        font-weight: 300;
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: #2f2f2f;
       }
     }
   }
@@ -113,7 +125,6 @@ export const HomeContainer = styled.div`
     margin-top: 2rem;
 
     flex-direction: column;
-    gap: 1rem;
 
     section {
       padding: 1rem;
@@ -122,6 +133,15 @@ export const HomeContainer = styled.div`
         grid-template-columns: 1fr;
         gap: 0.3rem;
       }
+
+      .solutions {
+
+        flex-direction: column;
+
+      img {
+        max-width: 100%; 
+      }
+    }
     }
   }
 `;

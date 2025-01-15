@@ -49,21 +49,18 @@ export const ImageContainer = styled.div`
 
     @media (max-width: 1000px) {
       width: 100%;
+      height: 0;
       margin: 0;
-      /* top: 20%; */
       padding: 0 3rem;
       
-      h3{
+      h2{
         max-width: 100%;
-        font-size: 2rem;
+        font-size: 1.3rem;
         margin-bottom: 0;
       }
-
       p{
-        padding: 3rem;
+        font-size: 1rem;
       }
-
-
     }
   }
 

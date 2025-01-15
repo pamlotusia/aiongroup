@@ -33,7 +33,7 @@ export function Slider() {
 
       {background.map((index) => {
         return (
-          <SwiperSlide style={{ height: "32rem" }}>
+          <SwiperSlide style={{ maxHeight: "32rem" }}>
             <ImagePosition
               image={index.image}
               text={index.text}

@@ -33,7 +33,7 @@ export const Container = styled.footer`
 
   a:hover,
   .contact:hover {
-    color: ${({ theme }) => theme.COLORS.YELLOW};
+    color: ${({ theme }) => theme.COLORS.ORANGE};
   }
 
   @media (max-width: 1000px) {

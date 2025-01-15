@@ -2,71 +2,64 @@ import { Container, About, Specialties } from "./styles";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 
-import admin from '../../assets/admin.jpg'
+//icons
+import { GrTechnology } from "react-icons/gr";
+
+const consulting = [
+  {
+    title: "Aion Consultoria Financeira",
+    text: " Focada em fornecer soluções de consultoria financeira estratégica, incluindo planejamento financeiro, análise de investimentos e gerenciamento de risco.",
+    icon: <GrTechnology />,
+  },
+  {
+    title: "Aion Gestão de Ativos",
+    text: " Responsável pela administração de portfólios de investimentos, oferecendo serviços de gestão de ativos para clientes institucionais e individuais.",
+    icon: <GrTechnology />,
+  },
+  {
+    title: "Aion Tecnologia e Inovação",
+    text: " Dedica-se ao desenvolvimento e implementação de tecnologias financeiras inovadoras, como automação de processos, análise de big data e inteligência artificial.",
+    icon: <GrTechnology />,
+  },
+  {
+    title: "Transformação Econômica",
+    text: " Ajudamos empresas a transformarem suas finanças e operações através de uma estruturação financeira sólida e eficaz.",
+    icon: <GrTechnology />,
+  },
+  {
+    title: "Sustentabilidade",
+    text: " Comprometemo-nos com práticas que, não apenas beneficiam as empresas, mas também têm um impacto positivo no meio ambiente e na sociedade.",
+    icon: <GrTechnology />,
+  },
+  {
+    title: "Crescimento e Expansão",
+    text: " Suportamos o crescimento sustentável das empresas, proporcionando oportunidades para expandirem seus negócios e alcançarem novos mercados.",
+    icon: <GrTechnology />,
+  },
+];
 
 export function Consultoria() {
-	return (
-		<Container>
-			<Header />
-			<main>
-				<About>
-					<img src={admin} alt="" />
-
-					<div className="textContent">
-						<p className="title">Desenvolvemos, implantamos e administramos:</p>
-
-						<p className="text">
-							Desenvolvemos projetos próprios e para clientes/parceiros,
-							realizando toda a análise técnica e pesquisa necessária, além de
-							oferecer consultoria e assessoria para o desenvolvimento dos
-							mesmos.
-						</p>
-						<p className="text">
-							Nossos produtos são oferecidos com o melhor custo-benefício,
-							qualidade e durabilidade. Atuamos em negócios de diferentes
-							tamanhos (pequenos, médios e grandes), com serviços
-							especializados, rápidos e precisos. Em operações, gerenciamos
-							aspectos financeiros internacionais e nacionais, tributários e
-							contábeis.
-						</p>
-
-						<p className="text">
-							Trabalhamos com total transparência em todos os níveis
-							corporativos, oferecendo planejamento estratégico, técnico,
-							analítico e multisetorial, além de capacitarmos, estimulamos e
-							promovemos o desenvolvimento dos nossos clientes e parceiros.
-						</p>
+  return (
+    <Container>
+      <Header />
+      <main>
+        <h3>Consultoria</h3>
+        <div className="container">
+			{consulting.map((index)=> {
+				return(
+					<div className="card">
+						<div className="icon">
+						{index.icon}
+						</div>
+						<p className="title">{index.title}</p>
+						<p className="text">{index.text}</p>
 					</div>
+				)
+			})}
+		</div>
+      </main>
 
-				</About>
-
-				<Specialties>
-					<div className="specialties">
-						<p className="title">
-							As especialidades e atribuições do <span>AION GROUP</span>.
-							Consultoria e assessoria técnica de :</p>
-
-						<ol>
-							<li>Financeira, para a captação e investimentos;</li>
-							<li>Mercadológica;</li>
-							<li>Contábil;</li>
-							<li>Tributária;</li>
-							<li>Em mercado de capitais;</li>
-							<li>Em planejamento estratégico corporativo;</li>
-							<li>
-								Na criação, montagem e administração e gestão corporativa de
-								Empresas e Instituições;
-							</li>
-							<li>Na criação, montagem e administração e gestão corporativa de produtos e serviços;</li>
-							<li>Na criação, montagem e administração e gestão corporativa de departamentos comerciais, para a colocação de produtos e serviços</li>
-						</ol>
-					</div>
-					<img src='https://institutoaionbrasil.com/prod_e_serv/images/37542.jpg' alt="" />
-
-				</Specialties>
-			</main>
-
-			<Footer />
-		</Container>
-	);
+      <Footer />
+    </Container>
+  );
 }
