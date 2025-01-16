@@ -116,7 +116,7 @@ export const Container = styled.div`
       height: 13rem;
       max-width: 300px;
       flex-shrink: 0;
-      background: ${({ theme }) => theme.COLORS.BLUE_200};
+      background: ${({ theme }) => theme.COLORS.GRAY_200};
       padding: 15px;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

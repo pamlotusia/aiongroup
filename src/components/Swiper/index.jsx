@@ -18,16 +18,14 @@ export function Slider() {
   return (
     <Swiper
       modules={[Navigation, Pagination, Autoplay]}
-      // Adicione os módulos desejados
-      spaceBetween={20} // Espaço entre slides
-      slidesPerView={1} // Quantos slides mostrar por vez
+      spaceBetween={20} 
+      slidesPerView={1} 
       navigation //
-      pagination={{ clickable: true }} // Paginação clicável
-      loop={true} // Loop infinito
+      pagination={{ clickable: true }} 
+      loop={true} 
       style={{ maxWidth: "100%" }}
-    >
-      {/* Slides */}
 
+    >
       {background.map((index) => {
         return (
           <SwiperSlide style={{ maxHeight: "32rem" }}>
@@ -35,6 +33,7 @@ export function Slider() {
               image={index.image}
               text={index.text}
               title={index.title}
+              key={index.title}
             />
           </SwiperSlide>
         );

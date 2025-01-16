@@ -26,17 +26,19 @@ export const Container = styled.div`
     margin: 2rem 0 0;
   }
 
-  p{
-    margin: 0 0 2rem;
-    color: ${({ theme }) => theme.COLORS.GRAY_400};
-    font-size: 1.1rem;
-  }
+
 
   .card {
     background-color: ${({ theme }) => theme.COLORS.WHITE};
 
     padding: 1rem;
     color: ${({ theme }) => theme.COLORS.GRAY_400};
+
+    p{
+    margin: 0 0 2rem;
+    color: ${({ theme }) => theme.COLORS.GRAY_400};
+    font-size: 1.1rem;
+  }
   }
 
   .title {
@@ -53,7 +55,8 @@ export const Container = styled.div`
 
   }
 
-  .card:hover .title {
+  .card:hover .title ,
+  .card:hover p{
     color: ${({ theme }) => theme.COLORS.WHITE};
   }
   .card:hover .icon {

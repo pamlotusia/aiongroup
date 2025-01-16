@@ -49,7 +49,7 @@ export const HomeContainer = styled.div`
       gap: 2rem;
 
       img {
-        min-width: 50% 
+        min-width: 50%;
       }
     }
 
@@ -101,6 +101,28 @@ export const HomeContainer = styled.div`
     }
   }
 
+  section.third {
+    margin: 0 auto;
+
+    .container {
+      display: flex;
+    }
+
+    p {
+      margin: 1rem 0;
+      color: ${({ theme }) => theme.COLORS.GRAY_800};
+      font-size: 1.1rem;
+    }
+
+    span {
+      color: ${({ theme }) => theme.COLORS.ORANGE};
+      font-weight: 500;
+    }
+
+    img {
+      width: 500px;
+    }
+  }
   section {
     max-width: 100%;
     padding: 3rem 5.5rem;
@@ -132,13 +154,22 @@ export const HomeContainer = styled.div`
       }
 
       .solutions {
-
         flex-direction: column;
 
-      img {
-        max-width: 100%; 
+        img {
+          max-width: 100%;
+        }
       }
+
     }
+    section.third {
+      .container {
+        flex-direction: column;
+
+        img{
+          max-width: 100%;
+        }
+      }
     }
   }
 `;
@@ -217,64 +248,3 @@ export const TextContainer = styled.div`
     }
   }
 `;
-
-// export const About = styled.div`
-//   padding: 9rem 12rem;
-//   display: flex;
-//   justify-content: space-between;
-//   gap: 5rem;
-
-//   .title{
-//       color: ${({theme})=> theme.COLORS.GREEN_800};
-//       font-size: 3rem;
-//       height: fit-content;
-//       width: 100%;
-//       margin: 0;
-
-//       border-bottom: 1px solid #ccc;
-//     }
-
-//   .subtitle{
-//       color: ${({theme})=> theme.COLORS.GREEN_300};
-//       font-size: 1.2rem;
-//       font-weight: 400;
-//       height: fit-content;
-//       margin: 0;
-//     }
-
-//   .content {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: baseline;
-//     gap: 2rem;
-
-//     .text {
-//       width: 40rem;
-//       text-align: justify;
-
-//       color: ${({ theme }) => theme.COLORS.GRAY_400};
-//       font-weight: 300;
-//       line-height: 1.5;
-//       font-size: 1.1rem;
-
-//       span {
-//         font-weight: 400;
-//       }
-//     }
-
-//     button {
-//       background-color: ${({ theme }) => theme.COLORS.YELLOW};
-//       color: ${({ theme }) => theme.COLORS.WHITE};
-//       font-size: 1.2rem;
-//       font-weight: 300;
-//       padding: 0.5rem 1rem;
-//       border: 0;
-//       border-radius: 2rem;
-//     }
-//     button:hover {
-//       background-color: transparent;
-//       color: ${({ theme }) => theme.COLORS.YELLOW};
-//       border: 1px solid ${({ theme }) => theme.COLORS.YELLOW};
-//     }
-//   }
-// `;

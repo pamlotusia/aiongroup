@@ -4,7 +4,7 @@ export default {
         YELLOW: "#f0b90b",
 
         ORANGE: '#FA5001',
-        ORANGE_200: '#F8F2DC',
+        ORANGE_200: '#F8F1D6',
 
         LILAC_200: '#D1CCC9',
         LILAC_500: '#9D23DB',

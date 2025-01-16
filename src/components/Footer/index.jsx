@@ -15,7 +15,7 @@ export function Footer() {
       <div className="links">
         {links.map((link) => {
           return (
-            <a href={link.url} className="link">{link.title}</a>
+            <a key={link.title} href={link.url} className="link">{link.title}</a>
           );
         })}
 
