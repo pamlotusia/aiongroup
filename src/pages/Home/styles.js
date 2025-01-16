@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import analise from "../../assets/analise.jpg";
 
 // Estilos principais
 export const HomeContainer = styled.div`
@@ -64,7 +63,7 @@ export const HomeContainer = styled.div`
       padding: 1rem;
       margin: 0 0 1rem;
 
-      background-color: ${({ theme }) => theme.COLORS.BLUE_200};
+      background-color: ${({ theme }) => theme.COLORS.ORANGE_200};
 
       .textContent {
         gap: 1rem;
@@ -152,7 +151,6 @@ export const BackgroundContainer = styled.div`
 
   position: relative;
 
-  background-image: url(${analise});
   background-size: cover;
   filter: brightness(0.7);
 `;

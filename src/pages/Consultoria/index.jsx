@@ -42,7 +42,7 @@ export function Consultoria() {
   return (
     <Container>
       <Header />
-      <main>
+      <section>
         <h3>Consultoria</h3>
         <div className="container">
 			{consulting.map((index)=> {
@@ -57,7 +57,7 @@ export function Consultoria() {
 				)
 			})}
 		</div>
-      </main>
+      </section>
 
       <Footer />
     </Container>

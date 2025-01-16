@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  main {
+  section {
     margin: 0 auto;
+    padding: 0 5.5rem 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,44 +29,52 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.COLORS.GRAY_400};
   }
 
+  .title {
+    color: ${({ theme }) => theme.COLORS.BLUE_600};
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
   .card:hover {
-    background-color: ${({ theme }) => theme.COLORS.BLUE_700};
+    background-color: ${({ theme }) => theme.COLORS.BLUE_400};
 
     padding: 1rem;
     color: ${({ theme }) => theme.COLORS.WHITE};
 
-    &.icon {
-      background-color: ${({ theme }) => theme.COLORS.BLUE_200};
-      color: ${({ theme }) => theme.COLORS.BLUE_700};
+  }
+
+  .card:hover .title {
+    color: ${({ theme }) => theme.COLORS.WHITE};
+  }
+  .card:hover .icon {
+    color: ${({ theme }) => theme.COLORS.BLUE_400};
+  }
+
+  .icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: ${({ theme }) => theme.COLORS.BLUE_200};
+    color: ${({ theme }) => theme.COLORS.BLUE_600};
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      font-size: 2rem;
     }
   }
-  .icon {
-      width: 3rem;
-      height: 3rem;
-      border-radius: 50%;
-      background-color: ${({ theme }) => theme.COLORS.BLUE_200};
-      color: ${({ theme }) => theme.COLORS.BLUE_700};
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      svg {
-        font-size: 2rem;
-      }
-    }
 
   .card > * {
     margin: 5px 0;
   }
 
-  .title {
-    color: ${({ theme }) => theme.COLORS.BLUE_700};
-    font-size: 1.3rem;
-    font-weight: 500;
-  }
-
   @media (max-width: 1000px) {
+
+    section {
+      padding: 1rem 8px;
+    }
     .container {
       grid-template-columns: 1fr;
     }

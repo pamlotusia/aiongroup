@@ -19,16 +19,13 @@ export function Navbar() {
 
 	const adresses = [
 		{ label: "Produtos", hasArrow: true },
-		{ label: "Sobre nós", url:'/'},
+		{ label: "Sobre nós", url:'/about-us'},
 	];
 
 	const products = [
 		{
 			label: 'Consultoria', url: '/consultoria'
 		},
-		{
-			label: 'Estruturação', url: 'estruturacao'
-		}
 	]
 
 	const [openMenu, setOpenMenu] = useState();

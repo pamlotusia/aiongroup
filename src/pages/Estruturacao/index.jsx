@@ -2,7 +2,7 @@ import { Container, Products, Background, About } from "./styles";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 
-import equipe from "../../assets/business-strategy-concept-with-game.jpg";
+// import equipe from "../../assets/business-strategy-concept-with-game.jpg";
 
 const services = [
   { title: "Administrativo"},
@@ -84,7 +84,7 @@ export function Estruturacao() {
             })}
 
             </ul>
-            <img src={equipe} alt="" />
+            {/* <img src={equipe} alt="" /> */}
           </div>
         </About>
       </main>

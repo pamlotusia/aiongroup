@@ -4,9 +4,6 @@ import "swiper/css"; // Estilo base do Swiper
 import "swiper/css/navigation"; // Estilos de navegação
 import "swiper/css/pagination"; // Estilos de paginação
 import { ImageContainer } from "./styles";
-// import consultoria from "../../assets/15410.jpg";
-import welcome from "../../assets/welcome.jpg";
-import security from "../../assets/security.jpg";
 import consulting from "../../assets/freepik-export-20250114141330y5Zm.jpeg";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 

@@ -5,6 +5,7 @@ import { Login } from './pages/Login'
 import { Institutional } from './pages/Institucional'
 import { Estruturacao } from './pages/Estruturacao'
 import { Consultoria } from './pages/Consultoria'
+import { AboutUs } from './pages/About'
 
 import { SignUp } from './pages/Signup'
 // import Services from './components/Servicos';
@@ -19,6 +20,7 @@ function App() {
 				<Routes>
 					{/* Página Principal (Home) */}
 					<Route path="/" element={<Home />} />
+					<Route path="/about-us" element={<AboutUs />} />
 					{/* <Route path="/cadastro-investidor" element={<CadastroLead />} /> Nova rota */}
 					<Route path="/register" element={<SignUp />} /> {/* Nova rota */}
 					<Route path="/entrar" element={<Login />} />
