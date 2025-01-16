@@ -6,9 +6,10 @@ export const Container = styled.li`
     justify-content: center;
     align-items: center;
 
-    padding: 0 2rem;
+    margin: 0 2rem;
     position: relative;
     font-family: "Bebas Neue", serif;
+    
 
     color: ${({ theme }) => theme.COLORS.GRAY_800};
   }
@@ -37,9 +38,9 @@ export const Container = styled.li`
   }
 
   @media (max-width:1000px){
-
     .link{
-      padding: 0 0 0 2rem;
+    justify-content: flex-end;
+      font-size: 2rem;
     }
   }
 `;

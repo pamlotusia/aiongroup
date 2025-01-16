@@ -20,7 +20,8 @@ export const Container = styled.nav`
     display: none;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1000px) {
+    /* width: 100%; */
     .btn-mobile {
       z-index: 2;
       display: block;
@@ -38,15 +39,17 @@ export const Container = styled.nav`
 
     ul {
       display: none;
-
+      align-items: baseline;
+      
       &.open {
         z-index: 2;
         margin-top: 2rem;
 
-        width: max-content;
+        width: 100%;
         height: 100vh;
 
-        display: block;
+        display: grid;
+        grid-template-rows: max-content;
         background-color: ${({ theme }) => theme.COLORS.WHITE};
 
         padding: 1rem 8px;

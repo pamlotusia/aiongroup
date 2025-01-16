@@ -22,6 +22,16 @@ export const Container = styled.div`
     gap: 1rem;
   }
 
+  h3{
+    margin: 2rem 0 0;
+  }
+
+  p{
+    margin: 0 0 2rem;
+    color: ${({ theme }) => theme.COLORS.GRAY_400};
+    font-size: 1.1rem;
+  }
+
   .card {
     background-color: ${({ theme }) => theme.COLORS.WHITE};
 

@@ -2,8 +2,10 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import ScrollReveal from 'scrollreveal';
+
 import { Header } from "../../components/Header";
-import { HomeContainer, About } from "./styles";
+import { HomeContainer} from "./styles";
 import { Slider } from "../../components/Swiper";
 import { Footer } from "../../components/Footer";
 
@@ -54,8 +56,20 @@ export function Home() {
     AOS.init();
   }, []);
 
+  useEffect(() => {
+    // Inicializa ScrollReveal
+    ScrollReveal().reveal('.reveal', {
+      distance: '50px',
+      origin: 'bottom',
+      duration: 800,
+      easing: 'ease-in-out',
+      reset: true, // Ativa a repetição ao rolar para cima
+      interval: 200
+    });
+  }, []);
+
   return (
-    <HomeContainer>
+    <HomeContainer className="reveal">
       <Header />
 
       <Slider />

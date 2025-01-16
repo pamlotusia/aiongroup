@@ -88,8 +88,7 @@ export const Container = styled.div`
       align-items: center;
     }
 
-    li {
-      font-size: 1rem;
+    li {  
       color: ${({ theme }) => theme.COLORS.WHITE};
     }
 
@@ -117,7 +116,7 @@ export const Container = styled.div`
       height: 13rem;
       max-width: 300px;
       flex-shrink: 0;
-      background: ${({ theme }) => theme.COLORS.GRAY_100};
+      background: ${({ theme }) => theme.COLORS.BLUE_200};
       padding: 15px;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -202,6 +201,7 @@ export const Container = styled.div`
 
       li {
         margin: 8px 0;
+      font-size: 1.1rem;
       }
     }
   }

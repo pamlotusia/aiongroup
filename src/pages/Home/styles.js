@@ -120,9 +120,7 @@ export const HomeContainer = styled.div`
     margin: 2rem 0;
   }
 
-  @media screen and (max-width: 900px) {
-    margin-top: 2rem;
-
+  @media screen and (max-width: 1000px) {
     flex-direction: column;
 
     section {
