@@ -162,7 +162,7 @@ export function AboutUs() {
       </section>
 
       <section className="slider">
-        <h3>PROPÓSITO DO GRUPO AION OF BRAZIL</h3>
+        <h3>Nosso propósito</h3>
         <p>
           O propósito do Grupo Aion of Brazil é transformar a gestão financeira
           e operacional de empresas e indivíduos, proporcionando soluções

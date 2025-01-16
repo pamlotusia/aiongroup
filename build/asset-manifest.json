@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.cf7f1384.css",
-    "main.js": "/static/js/main.d21a2861.js",
+    "main.js": "/static/js/main.110af1e4.js",
+    "static/media/consulting.jpg": "/static/media/consulting.02111d6a1aea51f537ff.jpg",
     "static/media/gbflogo.png": "/static/media/gbflogo.26d3f5bd74273c9834d5.png",
     "static/media/freepik-export-20250114141330y5Zm.jpeg": "/static/media/freepik-export-20250114141330y5Zm.1d0a3f686360e7ce4b84.jpeg",
     "static/media/admin.jpg": "/static/media/admin.1147d90a150aa9689561.jpg",
     "index.html": "/index.html",
     "main.cf7f1384.css.map": "/static/css/main.cf7f1384.css.map",
-    "main.d21a2861.js.map": "/static/js/main.d21a2861.js.map"
+    "main.110af1e4.js.map": "/static/js/main.110af1e4.js.map"
   },
   "entrypoints": [
     "static/css/main.cf7f1384.css",
-    "static/js/main.d21a2861.js"
+    "static/js/main.110af1e4.js"
   ]
 }

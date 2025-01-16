@@ -15,6 +15,7 @@ export const Container = styled.div`
 
   .container {
     width: 100%;
+    margin: 2rem 0;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -26,13 +27,15 @@ export const Container = styled.div`
     margin: 2rem 0 0;
   }
 
+  > p{
+    color: ${({ theme }) => theme.COLORS.GRAY_400};
+  }
 
 
   .card {
     background-color: ${({ theme }) => theme.COLORS.WHITE};
 
     padding: 1rem;
-    color: ${({ theme }) => theme.COLORS.GRAY_400};
 
     p{
     margin: 0 0 2rem;

@@ -12,6 +12,7 @@ export const Container = styled.header`
   .logo{
     font-size: 3rem;
     font-family: "Bebas Neue", serif;
+
   }
 
   @media (max-width: 900px) {
