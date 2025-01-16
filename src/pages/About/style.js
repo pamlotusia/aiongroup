@@ -36,13 +36,20 @@ export const Container = styled.div`
       gap: 1rem;
     }
     .card {
-      width: 500px;
+      max-width: 500px;
       padding: 1rem;
+      background-color: ${({ theme }) => theme.COLORS.WHITE};
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+
+      font-size: 1.1rem;
 
       .titleCard {
         font-size: 1.4rem;
         font-weight: 500;
         margin: 1rem 0;
+        font-family: "Bebas Neue", serif;
+        letter-spacing: 1px;
       }
     }
 
@@ -115,9 +122,13 @@ export const Container = styled.div`
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
+      font-size: 1.1rem;
+      color: ${({ theme }) => theme.COLORS.GRAY_800};
+
       h4 {
         margin: 0 0 1rem;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        color: ${({ theme }) => theme.COLORS.ORANGE};
       }
     }
   }
@@ -131,7 +142,7 @@ export const Container = styled.div`
       align-items: center;
       justify-content: center;
       gap: 1rem;
-      margin: 1rem 0 0 ;
+      margin: 1rem 0 0;
     }
 
     .container {
@@ -146,27 +157,52 @@ export const Container = styled.div`
       font-size: 1.1rem;
       margin: 1rem 0;
     }
-    
-    ul{
-        list-style: none;
 
+    ul {
+      list-style: none;
     }
 
-    li:hover{
+    li:hover {
       color: ${({ theme }) => theme.COLORS.ORANGE};
     }
-    
-    ul:first-child{
-        text-align: right;
+
+    ul:first-child {
+      text-align: right;
     }
 
-    .locates{
-        margin: 1rem 0;
-        display: flex;
-        max-width: 600px;
-        justify-content: center;
-        margin: 0 auto;
-        gap: 1rem;
+    .locates {
+      margin: 1rem 0;
+      display: flex;
+      max-width: 600px;
+      justify-content: center;
+      margin: 0 auto;
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    section {
+      padding: 1rem;
+    }
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .initial .card{
+        max-width: 100%;
+    }
+    .structure {
+      ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 1rem;
+      }
+
+      li {
+        margin: 8px 0;
+      }
     }
   }
 `;

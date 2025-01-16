@@ -12,6 +12,9 @@ import { Container } from "./style";
 import { IoMdTrophy } from "react-icons/io";
 import { IoStar } from "react-icons/io5";
 import { BsGlobe2 } from "react-icons/bs";
+import { useEffect } from "react";
+
+import ScrollReveal from 'scrollreveal';
 
 const slider = [
   {
@@ -45,8 +48,20 @@ const slider = [
 ];
 
 export function AboutUs() {
+  useEffect(() => {
+    // Inicializa ScrollReveal
+    ScrollReveal().reveal('.reveal', {
+      distance: '50px',
+      origin: 'bottom',
+      duration: 800,
+      easing: 'ease-in-out',
+      reset: true, // Ativa a repetição ao rolar para cima
+      interval: 200
+    });
+  }, []);
+
   return (
-    <Container>
+    <Container className="reveal">
       <Header />
       <section className="initial">
         <h3>Sobre nós</h3>
@@ -132,7 +147,6 @@ export function AboutUs() {
           estruturação financeira e de gestão. Atua em múltiplos segmentos,
           incluindo:
         </p>
-        <p className="textContent"></p>
         <ul>
           <li>Imobiliário</li>
           <li>Infraestruturas</li>
@@ -142,8 +156,8 @@ export function AboutUs() {
           <li>Ativos</li>
           <li>Seguros</li>
           <li>Indústrias</li>
-          <li>Tecnologias - Plataformas Digitais/Fintech</li>
           <li>Comunicação e Consultorias.</li>
+          <li>Tecnologias - Plataformas Digitais/Fintech</li>
         </ul>
       </section>
 
